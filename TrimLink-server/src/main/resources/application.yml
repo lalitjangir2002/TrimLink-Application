@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: url-trim
+
+  datasource:
+    url:
+    username:
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+        hibernate:
+          dialect:
+
+jwt:
+  secret:
+  expiration:
+
+frontend-url:
