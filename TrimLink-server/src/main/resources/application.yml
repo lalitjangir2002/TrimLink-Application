@@ -2,20 +2,23 @@ spring:
   application:
     name: url-trim
 
+server:
+  port: ${PORT:8080}
+
   datasource:
-    url:
-    username:
-    password:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
 
   jpa:
     hibernate:
       ddl-auto: update
     properties:
         hibernate:
-          dialect:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
 
 jwt:
-  secret:
-  expiration:
+  secret: dadlnajelkfnwfnjqfoqioiqnjnfjkwenfjnfwjnqlkqlf
+  expiration: 172800000
 
 frontend-url:
